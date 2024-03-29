@@ -2,8 +2,8 @@
 // https://docs.swift.org/swift-book
 import Foundation
 
-class RSCCore {
-    static let shared = RSCCore()
+public class RSCCore {
+    public static let shared = RSCCore()
     private init() {}
-    let roundedCornerSize = CGSize(width: 25, height: 25)
+    public let roundedCornerSize = CGSize(width: 25, height: 25)
 }
