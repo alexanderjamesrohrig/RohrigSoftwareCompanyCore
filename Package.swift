@@ -5,6 +5,11 @@ import PackageDescription
 
 let package = Package(
     name: "RohrigSoftwareCompanyCore",
+    platforms: [.macOS(.v10_15),
+                .iOS(.v16),
+                .tvOS(.v17),
+                .watchOS(.v10)
+    ],
     products: [
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
