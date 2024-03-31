@@ -8,8 +8,8 @@
 import Foundation
 
 public extension Date {
-    public init?(year: Int, month: Int, day: Int) {
+    public func createFrom(year: Int, month: Int, day: Int) -> Date? {
         let components = DateComponents(year: year, month: month, day: day)
-        self.init(components.date)
+        return Calendar.autoupdatingCurrent.date(from: components)
     }
 }
