@@ -7,7 +7,8 @@
 
 import Foundation
 
-extension Int {
+public extension Int {
+    /// `Int` broken up into an array by place value.
     var digits: [Int] {
         guard self >= 0 else {
             return []
