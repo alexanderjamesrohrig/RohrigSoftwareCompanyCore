@@ -11,4 +11,11 @@ final class RohrigSoftwareCompanyCoreTests: XCTestCase {
         let actualDate = Date.createFrom(year: 2024, month: 7, day: 19)
         XCTAssertEqual(expectedDate, actualDate)
     }
+    
+    // MARK: Int+
+    func testIntToDigits() throws {
+        let expected = [1, 0, 0]
+        let actual = 100.digits
+        XCTAssertEqual(expected, actual)
+    }
 }
