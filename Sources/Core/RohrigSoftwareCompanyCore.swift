@@ -13,7 +13,7 @@ public class RSCCore {
     
     public var isiPad: Bool {
         #if os(iOS)
-        UIDevice.current.userInterfaceIdiom == .pad {
+        if UIDevice.current.userInterfaceIdiom == .pad {
             return true
         }
         #endif
