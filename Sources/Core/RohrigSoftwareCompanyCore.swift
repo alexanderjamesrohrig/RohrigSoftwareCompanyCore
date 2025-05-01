@@ -28,8 +28,8 @@ public class RSCCore {
     private init() {}
 }
 
-// MARK: UIKit
-#if canImport(UIKit)
+// MARK: iOS
+#if os(iOS)
 import UIKit
 
 extension RSCCore {

@@ -18,7 +18,12 @@ public struct UniversalImage {
 
 // MARK: UIImage
 #if canImport(UIKit)
-extension UniversalImage {}
+extension UniversalImage {
+    public var image: Image {
+        let uiImage = UIImage(data: data) ?? UIImage()
+        return Image(uiImage: uiImage)
+    }
+}
 #endif
 
 // MARK: NSImage
